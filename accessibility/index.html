@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CardGenie Accessibility</title>
+<style>
+:root { --bg:#faf9fc; --fg:#2b2733; --muted:#6f6880; --accent:#8d7bb8; --accent-soft:#efeaf7; --card:#ffffff; --border:#e5e0ee; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#17141d; --fg:#e9e5f1; --muted:#a29ab5; --accent:#b3a3dd; --accent-soft:#262032; --card:#1f1a29; --border:#332c42; }
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--fg); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","PingFang TC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+header.site { padding:1rem 1.25rem; border-bottom:1px solid var(--border); }
+header.site .inner { max-width:44rem; margin:0 auto; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:.5rem; }
+a.brand { color:var(--fg); text-decoration:none; font-weight:700; letter-spacing:.01em; }
+a.brand span { color:var(--accent); }
+nav.lang { font-size:.85rem; }
+nav.lang a, nav.lang b { margin-left:.6rem; text-decoration:none; color:var(--muted); font-weight:400; }
+nav.lang b { color:var(--accent); font-weight:600; }
+nav.lang a:hover { color:var(--accent); }
+h1 { font-size:1.7rem; line-height:1.25; margin:0 0 .35rem; }
+p.meta { color:var(--muted); font-size:.85rem; margin-bottom:1.6rem; }
+h2 { font-size:1.12rem; margin:1.8rem 0 .5rem; color:var(--accent); }
+p, li { margin-bottom: .7rem; }
+ol, ul { padding-left:1.3rem; }
+a { color:var(--accent); }
+.card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem 1.15rem; margin:.65rem 0; }
+.card a.title { font-weight:600; text-decoration:none; display:block; }
+.card .sub { color:var(--muted); font-size:.85rem; }
+.card .langs { font-size:.85rem; margin-top:.3rem; }
+.card .langs a { margin-right:.8rem; }
+footer { max-width:44rem; margin:0 auto; padding:0 1.25rem 2.5rem; color:var(--muted); font-size:.8rem; }
+code { background:var(--accent-soft); border-radius:5px; padding:.08em .35em; font-size:.9em; }
+</style>
+</head>
+<body>
+<header class="site"><div class="inner"><a class="brand" href="/cardgenie-pages/">Card<span>Genie</span></a><nav class="lang"><b>English</b><a href="/cardgenie-pages/accessibility/zh-hans/">简体中文</a><a href="/cardgenie-pages/accessibility/zh-hant/">繁體中文</a></nav></div></header>
+<main>
+<h1>CardGenie Accessibility</h1>
+
+
+<p>CardGenie is built with system SwiftUI controls and supports Dynamic Type, VoiceOver labels and values on custom controls, dark appearance, and the Reduce Motion setting. The release process evaluates these behaviors on both iPhone and iPad against the app's common tasks before making an App Store Accessibility Nutrition Label claim.</p>
+<p>If an accessibility issue blocks you from using CardGenie, please email <a href="mailto:leealvin2002@gmail.com">leealvin2002@gmail.com</a>.</p>
+
+</main>
+<footer><p>CardGenie · ParallelBits</p></footer>
+</body>
+</html>
